@@ -71,7 +71,11 @@
                 <div class="home-note col-lg-7">
                     <h1>Hello,<br class="text-black">I'am <span class="home-myname">Prosenjit</span><br>Web
                         Developer</h1>
-                    <a class=" btn btn-primary mb-2 btn-lg" href="#contact">Contact</a>
+                    <div class="btn-group">
+                        <a target="blank" class="shadow btn btn-primary mb-2 btn-lg"
+                            href="https://drive.google.com/file/d/1LIeiMi8n_W-5ji8mXcMkIvMjCdFGtMA4/view?usp=sharing">
+                            <i class="fas fa-file-download"></i> Resume</a>
+                    </div>
                     <div class="social-media">
                         <a href="https://github.com/prosenjit-chd" target="blank"><i class="fab fa-3x fa-github-square"
                                 style="color: #464646;"></i></a>
@@ -141,9 +145,7 @@
 
 
                             <div class="btn-group">
-                                <a target="blank" class="shadow btn btn-primary mb-2 btn-lg"
-                                    href="https://drive.google.com/file/d/1QS8tz8qG1naO27WJWCF4PdC2U8L7D3hT/view?usp=sharing"> <i
-                                        class="fas fa-file-download"></i> CV Download</a>
+                                <a class=" btn btn-primary mb-2 btn-lg" href="#contact">Contact</a>
                             </div>
 
                         </div>
@@ -546,8 +548,8 @@
 
                     <div class="col-lg-4 col-md-6 col-sm-6 mb-3">
                         <div class="card shadow project-card">
-                            <img class="project-picture card-img-top" height="250" src="assets/img/phero-alternative.JPG"
-                                alt="Card image">
+                            <img class="project-picture card-img-top" height="250"
+                                src="assets/img/phero-alternative.JPG" alt="Card image">
                             <!-- <div class="card-header"> Header</div> -->
                             <div class="card-body">
                                 <h4 class="card-title">Complete Web Development</h4>
@@ -634,7 +636,7 @@
 
                     <!--Grid column-->
                     <div class="col-md-9 mb-md-0 mb-5 col-lg-7">
-                        <form id="contact-form">
+                        <form id="contact-form" action="https://formsubmit.co/prosenjit.chd@email.com" method="POST">
 
                             <!--Grid row-->
                             <div class="row">
@@ -642,7 +644,7 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="name" name="name" class="form-control">
+                                        <input type="text" id="name" name="name" class="form-control" required>
                                         <label for="name" class="">Your name</label>
                                     </div>
                                 </div>
@@ -651,7 +653,7 @@
                                 <!--Grid column-->
                                 <div class="col-md-6">
                                     <div class="md-form mb-0">
-                                        <input type="text" id="email" name="email" class="form-control">
+                                        <input type="text" id="email" name="email" class="form-control" required>
                                         <label for="email" class="">Your email</label>
                                     </div>
                                 </div>
@@ -679,20 +681,20 @@
 
                                     <div class="md-form">
                                         <textarea type="text" id="message" name="message" rows="2"
-                                            class="form-control md-textarea"></textarea>
+                                            class="form-control md-textarea" required></textarea>
                                         <label for="message">Details about project</label>
                                     </div>
 
                                 </div>
                             </div>
                             <!--Grid row-->
-
+                            <div class="text-center text-md-left">
+                                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();"
+                                    type="submit">Send</a>
+                            </div>
                         </form>
 
-                        <div class="text-center text-md-left">
-                            <a class="btn btn-primary"
-                                onclick="document.getElementById('contact-form').submit();">Send</a>
-                        </div>
+
                         <div class="status"></div>
                     </div>
                     <!--Grid column-->
